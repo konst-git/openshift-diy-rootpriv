@@ -10,6 +10,7 @@ esac
 # Create additional directories required by the diy cartridge
 mkdir -p $OPENSHIFT_DIY_DIR/{logs,run}
 echo `whoami` >> $OPENSHIFT_DIY_DIR/logs/binSetupWhoami
+echo $OPENSHIFT_APP_UUID >> $OPENSHIFT_DIY_DIR/logs/binSetupAppUuid
 
 # 2013jun18 hope this would work to grant user root priveleges and then edit hosts file
 # sudo adduser $OPENSHIFT_APP_UUID sudo
