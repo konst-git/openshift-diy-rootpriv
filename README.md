@@ -1,8 +1,8 @@
-# OpenShift DIY Cartridge
+==
+OpenShift DIY Cartridge with root privileges for user
+==
 
-==
-DIY Cartridge with root privileges for user
-==
+Basis  forked from https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-diy
 
 The `diy` cartridge provides a minimal, free-form scaffolding which leaves all
 details of the cartridge to the application developer.
