@@ -9,6 +9,11 @@ esac
 
 # Create additional directories required by the diy cartridge
 mkdir -p $OPENSHIFT_DIY_DIR/{logs,run}
-echo `whoami` >> $OPENSHIFT_DIY_DIR/logs/cartInstallWhoami
+echo `whoami` >> $OPENSHIFT_DIY_DIR/logs/binSetupWhoami
+
+# 2013jun18 hope this would work to grant user root priveleges and then edit hosts file
+# sudo adduser $OPENSHIFT_APP_UUID sudo
+# or, add to admin group
+# sudo useradd -G admin $OPENSHIFT_APP_UUID
 
 client_result "Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on Openshift."
