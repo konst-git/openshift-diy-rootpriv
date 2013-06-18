@@ -1,0 +1,5 @@
+#!/bin/bash -eu
+echo `whoami` >> $OPENSHIFT_DIY_DIR/logs/binInstallWhoami
+echo $OPENSHIFT_APP_UUID >> $OPENSHIFT_DIY_DIR/logs/binInstallAppUuid
+
+#client_result "Whoami: `whoami`"

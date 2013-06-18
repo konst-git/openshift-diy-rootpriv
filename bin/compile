@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Adapted from https://github.com/kr/heroku-buildpack-go
+#
+
+echo `whoami` >> $OPENSHIFT_DIY_DIR/logs/binCompileWhoami
+echo $OPENSHIFT_APP_UUID >> $OPENSHIFT_DIY_DIR/logs/binCompileAppUuid
